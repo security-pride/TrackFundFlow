@@ -1,0 +1,105 @@
+Name: crosschain
+Port: 7003
+Timeout: 600000
+Log:
+  Encoding: plain
+  Level: info
+  Mode: console
+
+# for collector & matcher
+LogLvl: info
+Database:
+  DataSource: your data base
+Proxy:
+  - http://127.0.0.1:7890
+BatchSize: 10000
+Pprof: 16060
+EtherscanRateLimit: 5
+ChainbaseApiKey: your own chainbase apiKay
+ChainbaseLimit: 15
+LocalEthUrl: Local Ethereum node
+AmlApiKey: you can apply for your own AML API key from https://metasleuth.io/api-service
+ReplayToken: you can apply for your own replay token from https://blocksec.com/fork
+Projects:
+  - Anyspwap
+  - Across
+  - CBridge
+  - WormHole
+  - Stargate
+  - Synapse
+  - PolyNetwork
+  - Hop
+  - ArbitrumBridge
+  - OptimismGateway
+  - AvalancheBridge
+
+GetBlockHttp:
+  eth:
+    - you need to apply for your own API key from GetBlock
+  bsc:
+  arbitrum:
+  polygon:
+  fantom:
+
+GetBlockWs:
+  bsc:
+
+AlchemyHttp:
+  eth:
+    - you need to apply for your own API key from Alchemy
+  polygon:  
+  arbitrum:
+  optimism:
+
+InfuraHttp:
+  eth:
+    - you need to apply for your own API key from Infura
+  polygon:
+  optimism:
+  arbitrum:
+  avalanche:
+
+ChainProviders:
+  eth:
+    Node: 
+    ScanUrl: https://api.etherscan.io/
+    ApiKeys: 
+    ChainbaseTable: ethereum
+    EnableTraceCall: true
+  bsc:
+    Node: 
+    ScanUrl: https://api.bscscan.com/
+    ApiKeys:
+    ChainbaseTable: bsc
+    EnableTraceCall: true
+  polygon:
+    Node: 
+    ScanUrl: https://api.polygonscan.com/
+    ApiKeys:
+    ChainbaseTable: polygon
+    EnableTraceCall: true
+  arbitrum-nova:
+      Node: https://nova.arbitrum.io/rpc
+      ScanUrl: https://api-nova.arbiscan.io/
+      ApiKeys:
+  avalanche:
+    Node: 
+    ScanUrl: https://api.snowtrace.io/
+    ApiKeys:
+      
+    ChainbaseTable: avalanche
+  fantom:
+    Node:
+    ScanUrl: https://api.ftmscan.com/
+    ApiKeys:
+    ChainbaseTable: fantom
+  arbitrum:
+    Node: 
+    ScanUrl: https://api.arbiscan.io/
+    ApiKeys:
+    ChainbaseTable: arbitrum
+  optimism:
+    Node: 
+    ScanUrl: https://api-optimistic.etherscan.io/
+    ApiKeys:
+    ChainbaseTable: optimism
