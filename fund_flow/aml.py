@@ -58,7 +58,7 @@ import time
 from common import dump
 import os
 def check_accounts(dir_path:str):
-    conf = Config("./config.yaml")
+    conf = Config("config.yaml")
     file_list = sorted(os.listdir(dir_path))
     if "Stargate" in dir_path:
         file_list = file_list[1:]

@@ -286,7 +286,7 @@ import aggregator as agg
 if __name__ == "__main__":
     load_all_token_info()
     inhash = "0xbcf5160e1daefb5002eb77362c8503643d549d14bc4445308155101ae29cbc48"
-    conf = Config("./config.yaml")
+    conf = Config("config.yaml")
     ts = "2023-12-26"
     inchain = "eth"
     tx = agg.get_complete_tx_with_hash(conf, inchain, inhash)
